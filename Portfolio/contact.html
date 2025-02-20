@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Deva Veera Kumaran</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   ]
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="lg" src="lg1.jpg" alt="Logo">
+                <span class="logo-name">Deva Veera Kumaran</span>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-content" data-aos="fade-down">
+            <h1 style="color: beige;">Contact Me</h1>
+            <p style="color: beige;">If you would like to get in touch with me, feel free to reach out via the contact form below or through
+                my social media:</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-down" data-aos-delay="300">
+            <form id="contact-form" action="https://formspree.io/f/xkgoyova" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="sendMail()">Submit</button>
+            </form>
+            
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links" data-aos="fade-down" data-aos-delay="500">
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="insta.png" alt="Instagram"></a></li>
+                <li><a href="https://github.com" target="_blank"><img src="github.png" alt="GitHub"></a></li>
+                <li><a href="https://wa.me/1234567890" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+</body>
+
+</html>
